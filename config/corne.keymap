@@ -80,17 +80,17 @@
 
         default_layer {
             label = "0";
-  bindings = <
-    &kp 0x2414  &kp W      &kp E      &kp R      &kp T
-    &lt 3 &kp A   &kp S      &kp D      &kp F      &kp G
-    &kp 0x221d  &kp 0x281b &kp C      &kp V      &kp B
-    &kp NO      &kp NO     &kp 0x2129 &lt 2 &kp TAB &lt 1 &kp SPC
-    &kp 0x2213  &kp O      &kp I      &kp U      &kp Y
-    &kp 0x228a  &kp L      &kp K      &kp J      &kp H
-    &lt 3 &kp MHEN &kp CAPS  &kp MINS   &kp M      &kp N
-    &kp NO      &kp NO     &kp 0x224c &lt 2 &kp BSPC &lt 1 &kp ENT
-  >;
-};
+            bindings = <
+                &kp 0x2414  &kp W      &kp E      &kp R      &kp T
+                &lt 3 &kp A   &kp S      &kp D      &kp F      &kp G
+                &kp 0x221d  &kp 0x281b &kp C      &kp V      &kp B
+                &none       &none      &kp 0x2129 &lt 2 &kp TAB &lt 1 &kp SPC
+                &kp 0x2213  &kp O      &kp I      &kp U      &kp Y
+                &kp 0x228a  &kp L      &kp K      &kp J      &kp H
+                &lt 3 &kp MHEN &kp CAPS  &kp MINS   &kp M      &kp N
+                &none       &none      &kp 0x224c &lt 2 &kp BSPC &lt 1 &kp ENT
+            >;
+        };
 
         number_layer {
             label = "1";
