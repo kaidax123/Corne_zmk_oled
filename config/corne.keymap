@@ -81,7 +81,7 @@
         default_layer {
             label = "0";
             bindings = <
-                &kp 0x2414  &kp W      &kp E      &kp R      &kp T
+                &none  &kp W      &kp E      &kp R      &kp T
                 &lt 3 &kp A   &kp S      &kp D      &kp F      &kp G
                 &kp 0x221d  &kp 0x281b &kp C      &kp V      &kp B
                 &none       &none      &kp 0x2129 &lt 2 &kp TAB &lt 1 &kp SPC
