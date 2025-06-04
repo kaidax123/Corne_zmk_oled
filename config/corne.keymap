@@ -93,8 +93,8 @@
             label = "1";
             bindings = <
     &none    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
-    &none    &kp LALT  &kp KP_PLUS  &kp KP_MINUS  &kp RBRC  &kp BSLASH  &kp LS(SLASH)  &kp PGUP  &kp UP    &kp PGDN  &mt LALT HOME  &none
-    &none    &kp LSHIFT  &kp KP_ASTERISK  &kp KP_SLASH  &kp SCLN  &kp SQT  &kp LS(N1)  &kp LEFT  &kp DOWN  &kp RIGHT  &mt LSHIFT END  &none
+    &none    &kp LALT  &none  &none  &kp RBRC  &kp BSLASH  &kp LS(SLASH)  &kp PGUP  &kp UP    &kp PGDN  &mt LALT HOME  &none
+&none    &kp LSHIFT  &kp KP_ASTERISK  &kp KP_SLASH  &kp SCLN  &kp SQT  &kp LS(N1)  &kp LEFT  &kp DOWN  &kp RIGHT  &mt LSHIFT END  &none
     // ここから下の行は、物理的なキー配列に合わせて正確にキーを配置する必要があります。
     // 例: キーボードの最下段（親指キーなど）が6キーの場合
     &kp RCTRL &kp LBRC &kp EQUAL &kp DOT &kp COMMA &kp RCTRL // 仮の配置。KC_NOや&transが必要な場合は調整
