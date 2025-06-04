@@ -97,7 +97,7 @@
                 // 2行目: ユーザーの最新の変更を適用し、スペースを修正
 //&none  &kp LALT  &kp KP_PLUS  &kp KP_MINUS  &kp RBRC  &kp BSLASH  &kp LS(SLASH)  &kp PGUP  &kp UP  &kp PGDN  &mt LALT HOME  &none
 //&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-&none  &kp LALT  &kp KP_PLUS   &none   &none   &none     &none   &none   &none   &none   &none   &none
+&none  &kp LALT  &kp KP_PLUS   &kp KP_MINUS  &kp RBRC  &kp BSLASH     &none   &none   &none   &none   &none   &none
 // 3行目: 以前の修正を適用し、スペースを統一
                 &none &kp LSHIFT &kp KP_ASTERISK &kp KP_SLASH &kp SCLN &kp SQT &kp LS(N1) &kp LEFT &kp DOWN &kp RIGHT &mt LSHIFT END &none
                 // 4行目: 以前の修正を適用し、スペースを統一
