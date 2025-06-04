@@ -105,7 +105,7 @@
                 // 0x224D: Tap End, Hold LShift -> &mt LSHIFT END
                 &none /* Original: 0x2414 */ &kp W &kp E &kp R &kp T &lt 3 KC_A &kp S &kp D &kp F &kp G &mt LSHIFT RET &lt LAYER_6 ESC
                 &kp C &kp V &kp B &none &none &mt LCTRL ESC &lt 2 KC_TAB &lt 1 KC_SPACE &mt LSHIFT P &kp O &kp I &kp U
-                &kp Y &mt LSHIFT UP &kp L &kp K &kp J &kp H &lt 3 KC_MHEN &kp CAPSLOCK &kp MINUS &kp M &kp N &none
+                &kp Y &mt LSHIFT UP &kp L &kp K &kp J &kp H &lt 3 KC_MHEN &kp CAPSLOCK &mt LSHIFT MINUS &kp M &kp N &none
                 &none &mt LSHIFT DEL &lt ALT_SHIFT_L LEFT_ARROW &mt LSHIFT END &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
             >;
         };
@@ -116,8 +116,8 @@
             bindings = <
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp LALT &kp KP_PLUS &kp KP_MINUS &kp RBRC &kp BSLH &kp LSHIFT &kp KP_ASTERISK
                 &kp KP_SLASH &kp SEMICOLON &kp SQT &none &none &kp LCTRL &kp LBRC &kp EQUAL &kp N0 &kp N9 &kp N8 &kp N7
-                &kp N6 &none /* Original: 0x244a - 0x244aはdefault_layerで処理されるため、ここではnone */ &kp PG_DOWN &kp UP &kp PG_UP &kp HOME /* S(KC_SLSH) - Shift+Slash は &kp LS(SLASH) が適切だが、JSONのKC_SLSHがどこにあるか不明なため、ここではEndにマッピング */ &none /* Original: 0x224d - 0x224dはdefault_layerで処理されるため、ここではnone */ &kp RIGHT &kp DOWN &kp LEFT &kp LS(N1) &none
-                &none &kp RCTRL &kp DOT &kp COMMA &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &kp N6 &none /* 0x244A は default_layer で処理されるため、ここでは none */ &kp PG_DOWN &kp UP &kp PG_UP &kp HOME /* S(KC_SLSH) は ZMK では &kp LS(SLASH) が適切ですが、JSONのKC_SLSHがどこにあるか不明なため、ここでは HOME にマッピング */ &none /* 0x224D は default_layer で処理されるため、ここでは none */ &kp RIGHT &kp DOWN &kp LEFT &kp LS(N1) &none
+                &none &kp RCTRL &kp DOT &kp COMMA &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -128,7 +128,7 @@
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp LALT &kp PG_UP &kp UP &kp PG_DOWN &kp HOME &kp LSHIFT &kp LEFT
                 &kp DOWN &kp RIGHT &kp END &none &none &kp RCTRL &kp LSHIFT &kp RALT &kp F10 &kp F9 &kp F8 &kp F7
                 &kp F6 &kp F11 &kp C_VOL_UP &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_MUTE &kp F12 &kp C_NEXT &kp C_STOP &kp C_PREV &kp C_PREV &none
-                &none &kp RCTRL &kp RSHIFT &kp RALT &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &none &kp RCTRL &kp RSHIFT &kp RALT &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -139,7 +139,7 @@
                 &kp P /* LCAG(KC_P) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N7 &kp N8 &kp N9 &kp KP_PLUS &kp RET /* LCAG(KC_ENT) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N4 &kp N5 &kp N6 &kp KP_MINUS &kp BSPC /* LCAG(KC_BSPC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N1
                 &kp N2 &kp N3 &kp F4 &none &none &kp N0 &kp KP_ASTERISK &kp RSHIFT &kp NUM_LOCK &kp KP_PLUS &kp N9 &kp N8
                 &kp N7 &kp RET &kp KP_MINUS &kp N6 &kp N5 &kp N4 &kp O /* RCS(KC_O) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp X /* RCS(KC_X) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N3 &kp N2 &kp N1 &none
-                &none &kp KP_SLASH &kp KP_ASTERISK &kp N0 &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &none &kp KP_SLASH &kp KP_ASTERISK &kp N0 &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -150,7 +150,7 @@
                 &mo 0 &mo 1 &mo 2 &mo 3 &mo 4 &kp A /* MEH(KC_A) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp S /* MEH(KC_S) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp D /* MEH(KC_D) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F /* MEH(KC_F) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp G /* MEH(KC_G) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp Z /* MEH(KC_Z) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp X /* MEH(KC_X) - ZMKに直接の同等機能がないため、基本キーにマッピング */
                 &kp C /* MEH(KC_C) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp V /* MEH(KC_V) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp B /* MEH(KC_B) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none &none &kp N2 /* MEH(KC_2) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N3 /* MEH(KC_3) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N4 /* MEH(KC_4) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N5 /* MEH(KC_5) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp BSPC &kp KP_PLUS &kp KP_N9 &kp KP_N8
                 &kp KP_N7 &kp TAB &kp KP_MINUS &kp KP_N6 &kp KP_N5 &kp KP_N4 &kp KP_ENTER &kp KP_EQUAL &kp KP_N3 &kp KP_N2 &kp KP_N1 &none
-                &none &kp KP_SLASH &kp KP_ASTERISK &kp KP_N0 &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &none &kp KP_SLASH &kp KP_ASTERISK &kp KP_N0 &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -161,7 +161,7 @@
                 &mt LGUI KC_N6 /* MT(MOD_LGUI | MOD_RGUI,KC_6) - ZMK &mtは1つのモディファイアのみを受け入れるため、LGUIにマッピング */ &mt LGUI KC_N4 /* MT(MOD_LGUI | MOD_RGUI,KC_4) */ &kp E /* HYPR(KC_E) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp R /* HYPR(KC_R) */ &kp T /* HYPR(KC_T) */ &mt LGUI KC_N8 /* MT(MOD_LGUI | MOD_RGUI,KC_8) */ &mt LGUI KC_ESC /* MT(MOD_LGUI | MOD_RGUI,KC_ESC) */ &kp D /* HYPR(KC_D) */ &kp F /* HYPR(KC_F) */ &kp G /* HYPR(KC_G) */ &mt LGUI KC_N0 /* MT(MOD_LGUI | MOD_RGUI,KC_0) */ &mt LGUI KC_N3 /* MT(MOD_LGUI | MOD_RGUI,KC_3) */
                 &kp C /* HYPR(KC_C) */ &kp V /* HYPR(KC_V) */ &kp B /* HYPR(KC_B) */ &kp N1 /* HYPR(KC_1) */ &kp N2 /* HYPR(KC_2) */ &kp N3 /* HYPR(KC_3) */ &kp N4 /* HYPR(KC_4) */ &kp N5 /* HYPR(KC_5) */ &none &none &none &kp TAB /* A(KC_TAB) - ZMKに直接の同等機能がないため、基本キーにマッピング */
                 &kp F4 /* A(KC_F4) */ &none &none &none &kp T /* C(KC_T) */ &kp W /* C(KC_W) */ &none &none &none &kp TAB /* C(KC_TAB) */ &kp TAB /* RCS(KC_TAB) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none
-                &none &none &kp RBRC /* MEH(KC_RBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &df 0 &kp LBRC /* MEH(KC_LBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &none &none &kp RBRC /* MEH(KC_RBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &df 0 &kp LBRC /* MEH(KC_LBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -171,8 +171,8 @@
             bindings = <
                 &kp Q /* LCAG(KC_Q) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F21 &kp F22 &kp F23 &kp F24 &kp A /* LCAG(KC_A) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F17 &kp F18 &kp F19 &kp F20 &kp Z /* LCAG(KC_Z) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F13
                 &kp F14 &kp F15 &kp F16 &none &none &none &df 0 &none &kp KP_DOT &kp KP_N9 &kp KP_N8 &kp KP_N7
-                &kp KP_PLUS &kp KP_N0 &kp KP_N6 &kp KP_N5 &kp N4 &kp KP_MINUS &kp BSPC &kp KP_N3 &kp KP_N2 &kp KP_N1 &kp KP_ASTERISK &none
-                &none &kp KP_ENTER &none &none &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &kp KP_PLUS &kp KP_N0 &kp KP_N6 &kp N5 &kp N4 &kp KP_MINUS &kp BSPC &kp KP_N3 &kp KP_N2 &kp KP_N1 &kp KP_ASTERISK &none
+                &none &kp KP_ENTER &none &none &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -183,7 +183,7 @@
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &trans &trans &trans &trans &trans &trans // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -194,7 +194,7 @@
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &lt 3 KC_SPACE &lt 1 KC_SPACE &lt 1 KC_SPACE &trans &trans &trans &tt 1 &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &lt 1 KC_SPACE &lt 1 KC_SPACE
-                &lt 1 KC_SPACE &lt 1 KC_SPACE &lt 1 KC_SPACE &trans &trans &trans &trans &trans // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
+                &lt 1 KC_SPACE &lt 1 KC_SPACE &lt 1 KC_SPACE &trans &trans &trans &trans &trans // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -202,10 +202,10 @@
         alt_shift_layer {
             label = "ALT_SHIFT_L";
             bindings = <
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &kp LALT &kp LSHIFT &none &none &none &none // 任意のキー位置にLAltとLShiftを配置
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &kp LALT &kp LSHIFT &trans &trans &trans &trans // 任意のキー位置にLAltとLShiftを配置
             >;
         };
     };
