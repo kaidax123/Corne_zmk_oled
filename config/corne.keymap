@@ -1,4 +1,4 @@
-/*
+コード スニペット/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -105,7 +105,7 @@
                 // 0x224D: Tap End, Hold LShift -> &mt LSHIFT END
                 &none /* Original: 0x2414 */ &kp W &kp E &kp R &kp T &lt 3 A &kp S &kp D &kp F &kp G &mt LSHIFT RET &lt LAYER_6 ESC
                 &kp C &kp V &kp B &none &none &mt LCTRL ESC &lt 2 TAB &lt 1 SPACE &mt LSHIFT P &kp O &kp I &kp U
-                &kp Y &mt LSHIFT UP &kp L &kp K &kp J &kp H &lt 3 INT5 &kp CAPSLOCK &mt LSHIFT MINUS_AND_UNDERSCORE &kp M &kp N &none
+                &kp Y &mt LSHIFT UP &kp L &kp K &kp J &kp H &lt 3 INT5 &kp CAPSLOCK &mt LSHIFT MINUS &kp M &kp N &none
                 &none &mt LSHIFT DEL &lt ALT_SHIFT_L LEFT_ARROW &mt LSHIFT END &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
             >;
         };
@@ -209,3 +209,4 @@
         };
     };
 };
+
