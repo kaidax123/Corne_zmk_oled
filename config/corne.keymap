@@ -27,9 +27,9 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
+            #binding-cells = ;
+            tapping-term-ms = ;
+            quick-tap-ms = ;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -103,9 +103,9 @@
                 // 0x224C: Tap Delete, Hold LShift -> &mt LSHIFT DEL
                 // 0x244A: Tap Left Arrow, Hold LAlt + LShift -> &lt ALT_SHIFT_L LEFT_ARROW
                 // 0x224D: Tap End, Hold LShift -> &mt LSHIFT END
-                &none /* Original: 0x2414 */ &kp W &kp E &kp R &kp T &lt 3 KC_A &kp S &kp D &kp F &kp G &mt LSHIFT RET &lt LAYER_6 ESC
-                &kp C &kp V &kp B &none &none &mt LCTRL ESC &lt 2 KC_TAB &lt 1 KC_SPACE &mt LSHIFT P &kp O &kp I &kp U
-                &kp Y &mt LSHIFT UP &kp L &kp K &kp J &kp H &lt 3 KC_MHEN &kp CAPSLOCK &mt LSHIFT MINUS &kp M &kp N &none
+                &none /* Original: 0x2414 */ &kp W &kp E &kp R &kp T &lt 3 A &kp S &kp D &kp F &kp G &mt LSHIFT RET &lt LAYER_6 ESC
+                &kp C &kp V &kp B &none &none &mt LCTRL ESC &lt 2 TAB &lt 1 SPACE &mt LSHIFT P &kp O &kp I &kp U
+                &kp Y &mt LSHIFT UP &kp L &kp K &kp J &kp H &lt 3 INT5 &kp CAPSLOCK &mt LSHIFT MINUS &kp M &kp N &none
                 &none &mt LSHIFT DEL &lt ALT_SHIFT_L LEFT_ARROW &mt LSHIFT END &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つはnone
             >;
         };
@@ -116,7 +116,7 @@
             bindings = <
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp LALT &kp KP_PLUS &kp KP_MINUS &kp RBRC &kp BSLH &kp LSHIFT &kp KP_ASTERISK
                 &kp KP_SLASH &kp SEMICOLON &kp SQT &none &none &kp LCTRL &kp LBRC &kp EQUAL &kp N0 &kp N9 &kp N8 &kp N7
-                &kp N6 &none /* 0x244A は default_layer で処理されるため、ここでは none */ &kp PG_DOWN &kp UP &kp PG_UP &kp HOME /* S(KC_SLSH) は ZMK では &kp LS(SLASH) が適切ですが、JSONのKC_SLSHがどこにあるか不明なため、ここでは HOME にマッピング */ &none /* 0x224D は default_layer で処理されるため、ここでは none */ &kp RIGHT &kp DOWN &kp LEFT &kp LS(N1) &none
+                &kp N6 &none /* 0x244A は default_layer で処理されるため、ここでは none */ &kp PG_DOWN &kp UP &kp PG_UP &kp LS(SLASH) /* S(KC_SLSH) */ &none /* 0x224D は default_layer で処理されるため、ここでは none */ &kp RIGHT &kp DOWN &kp LEFT &kp LS(N1) &none
                 &none &kp RCTRL &kp DOT &kp COMMA &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
@@ -136,9 +136,9 @@
         layer_3 {
             label = "LAYER_3";
             bindings = <
-                &kp P /* LCAG(KC_P) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N7 &kp N8 &kp N9 &kp KP_PLUS &kp RET /* LCAG(KC_ENT) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N4 &kp N5 &kp N6 &kp KP_MINUS &kp BSPC /* LCAG(KC_BSPC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N1
+                &kp P /* LCAG(P) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N7 &kp N8 &kp N9 &kp KP_PLUS &kp RET /* LCAG(RET) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N4 &kp N5 &kp N6 &kp KP_MINUS &kp BSPC /* LCAG(BSPC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N1
                 &kp N2 &kp N3 &kp F4 &none &none &kp N0 &kp KP_ASTERISK &kp RSHIFT &kp NUM_LOCK &kp KP_PLUS &kp N9 &kp N8
-                &kp N7 &kp RET &kp KP_MINUS &kp N6 &kp N5 &kp N4 &kp O /* RCS(KC_O) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp X /* RCS(KC_X) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N3 &kp N2 &kp N1 &none
+                &kp N7 &kp RET &kp KP_MINUS &kp N6 &kp N5 &kp N4 &kp O /* RCS(O) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp X /* RCS(X) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N3 &kp N2 &kp N1 &none
                 &none &kp KP_SLASH &kp KP_ASTERISK &kp N0 &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
@@ -147,9 +147,9 @@
         layer_4 {
             label = "LAYER_4";
             bindings = <
-                &mo 0 &mo 1 &mo 2 &mo 3 &mo 4 &kp A /* MEH(KC_A) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp S /* MEH(KC_S) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp D /* MEH(KC_D) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F /* MEH(KC_F) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp G /* MEH(KC_G) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp Z /* MEH(KC_Z) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp X /* MEH(KC_X) - ZMKに直接の同等機能がないため、基本キーにマッピング */
-                &kp C /* MEH(KC_C) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp V /* MEH(KC_V) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp B /* MEH(KC_B) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none &none &kp N2 /* MEH(KC_2) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N3 /* MEH(KC_3) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N4 /* MEH(KC_4) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N5 /* MEH(KC_5) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp BSPC &kp KP_PLUS &kp KP_N9 &kp KP_N8
-                &kp KP_N7 &kp TAB &kp KP_MINUS &kp KP_N6 &kp KP_N5 &kp KP_N4 &kp KP_ENTER &kp KP_EQUAL &kp KP_N3 &kp KP_N2 &kp KP_N1 &none
+                &mo 0 &mo 1 &mo 2 &mo 3 &mo 4 &kp A /* MEH(A) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp S /* MEH(S) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp D /* MEH(D) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F /* MEH(F) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp G /* MEH(G) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp Z /* MEH(Z) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp X /* MEH(X) - ZMKに直接の同等機能がないため、基本キーにマッピング */
+                &kp C /* MEH(C) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp V /* MEH(V) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp B /* MEH(B) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none &none &kp N2 /* MEH(N2) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N3 /* MEH(N3) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N4 /* MEH(N4) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp N5 /* MEH(N5) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp BSPC &kp KP_PLUS &kp KP_N9 &kp KP_N8
+                &kp KP_N7 &kp TAB &kp KP_MINUS &kp KP_N6 &kp N5 &kp N4 &kp KP_ENTER &kp KP_EQUAL &kp KP_N3 &kp KP_N2 &kp KP_N1 &none
                 &none &kp KP_SLASH &kp KP_ASTERISK &kp KP_N0 &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
@@ -158,10 +158,10 @@
         layer_5 {
             label = "LAYER_5";
             bindings = <
-                &mt LGUI KC_N6 /* MT(MOD_LGUI | MOD_RGUI,KC_6) - ZMK &mtは1つのモディファイアのみを受け入れるため、LGUIにマッピング */ &mt LGUI KC_N4 /* MT(MOD_LGUI | MOD_RGUI,KC_4) */ &kp E /* HYPR(KC_E) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp R /* HYPR(KC_R) */ &kp T /* HYPR(KC_T) */ &mt LGUI KC_N8 /* MT(MOD_LGUI | MOD_RGUI,KC_8) */ &mt LGUI KC_ESC /* MT(MOD_LGUI | MOD_RGUI,KC_ESC) */ &kp D /* HYPR(KC_D) */ &kp F /* HYPR(KC_F) */ &kp G /* HYPR(KC_G) */ &mt LGUI KC_N0 /* MT(MOD_LGUI | MOD_RGUI,KC_0) */ &mt LGUI KC_N3 /* MT(MOD_LGUI | MOD_RGUI,KC_3) */
-                &kp C /* HYPR(KC_C) */ &kp V /* HYPR(KC_V) */ &kp B /* HYPR(KC_B) */ &kp N1 /* HYPR(KC_1) */ &kp N2 /* HYPR(KC_2) */ &kp N3 /* HYPR(KC_3) */ &kp N4 /* HYPR(KC_4) */ &kp N5 /* HYPR(KC_5) */ &none &none &none &kp TAB /* A(KC_TAB) - ZMKに直接の同等機能がないため、基本キーにマッピング */
-                &kp F4 /* A(KC_F4) */ &none &none &none &kp T /* C(KC_T) */ &kp W /* C(KC_W) */ &none &none &none &kp TAB /* C(KC_TAB) */ &kp TAB /* RCS(KC_TAB) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none
-                &none &none &kp RBRC /* MEH(KC_RBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &df 0 &kp LBRC /* MEH(KC_LBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
+                &mt LGUI N6 /* MT(MOD_LGUI | MOD_RGUI,N6) - ZMK &mtは1つのモディファイアのみを受け入れるため、LGUIにマッピング */ &mt LGUI N4 /* MT(MOD_LGUI | MOD_RGUI,N4) */ &kp E /* HYPR(E) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp R /* HYPR(R) */ &kp T /* HYPR(T) */ &mt LGUI N8 /* MT(MOD_LGUI | MOD_RGUI,N8) */ &mt LGUI ESC /* MT(MOD_LGUI | MOD_RGUI,ESC) */ &kp D /* HYPR(D) */ &kp F /* HYPR(F) */ &kp G /* HYPR(G) */ &mt LGUI N0 /* MT(MOD_LGUI | MOD_RGUI,N0) */ &mt LGUI N3 /* MT(MOD_LGUI | MOD_RGUI,N3) */
+                &kp C /* HYPR(C) */ &kp V /* HYPR(V) */ &kp B /* HYPR(B) */ &kp N1 /* HYPR(N1) */ &kp N2 /* HYPR(N2) */ &kp N3 /* HYPR(N3) */ &kp N4 /* HYPR(N4) */ &kp N5 /* HYPR(N5) */ &none &none &none &kp TAB /* A(TAB) - ZMKに直接の同等機能がないため、基本キーにマッピング */
+                &kp F4 /* A(F4) */ &none &none &none &kp T /* C(T) */ &kp W /* C(W) */ &none &none &none &kp TAB /* C(TAB) */ &kp TAB /* RCS(TAB) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none
+                &none &none &kp RBRC /* MEH(RBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &df 0 &kp LBRC /* MEH(LBRC) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
@@ -169,7 +169,7 @@
         layer_6 {
             label = "LAYER_6";
             bindings = <
-                &kp Q /* LCAG(KC_Q) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F21 &kp F22 &kp F23 &kp F24 &kp A /* LCAG(KC_A) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F17 &kp F18 &kp F19 &kp F20 &kp Z /* LCAG(KC_Z) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F13
+                &kp Q /* LCAG(Q) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F21 &kp F22 &kp F23 &kp F24 &kp A /* LCAG(A) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F17 &kp F18 &kp F19 &kp F20 &kp Z /* LCAG(Z) - ZMKに直接の同等機能がないため、基本キーにマッピング */ &kp F13
                 &kp F14 &kp F15 &kp F16 &none &none &none &df 0 &none &kp KP_DOT &kp KP_N9 &kp KP_N8 &kp KP_N7
                 &kp KP_PLUS &kp KP_N0 &kp KP_N6 &kp N5 &kp N4 &kp KP_MINUS &kp BSPC &kp KP_N3 &kp KP_N2 &kp KP_N1 &kp KP_ASTERISK &none
                 &none &kp KP_ENTER &none &none &none &none // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
@@ -191,10 +191,9 @@
         layer_8 {
             label = "LAYER_8";
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &lt 3 KC_SPACE &lt 1 KC_SPACE &lt 1 KC_SPACE &trans &trans &trans &tt 1 &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &lt 1 KC_SPACE &lt 1 KC_SPACE
-                &lt 1 KC_SPACE &lt 1 KC_SPACE &lt 1 KC_SPACE &trans &trans &trans &trans &trans // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
+                &trans &trans &lt 3 SPACE &lt 1 SPACE &lt 1 SPACE &trans &trans &trans &tt 1 &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &lt 1 SPACE &lt 1 SPACE
+                &lt 1 SPACE &lt 1 SPACE &lt 1 SPACE &trans &trans &trans &trans &trans // JSONは40キー、ZMKは42ポジションのため、最後の2つは none
             >;
         };
 
