@@ -95,7 +95,7 @@
                 // 1行目: 数字 1-0 と残りのキー (JSONから再配置)
                 &none &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
                 // 2行目: ユーザーの最新の変更を適用し、スペースを修正
-&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
+&kp LALT &kp PLUS &kp MINUS &kp RIGHT_BRACKET &kp BACKSLASH &kp LS(KC_SLSH) &kp PGUP &kp UP &kp PGDN &mt LALT HOME &none
                 // 3行目: 以前の修正を適用し、スペースを統一
                 &none &kp LSHIFT &kp KP_ASTERISK &kp KP_SLASH &kp SCLN &kp SQT &kp LS(N1) &kp LEFT &kp DOWN &kp RIGHT &mt LSHIFT END &none
                 // 4行目: 以前の修正を適用し、スペースを統一
