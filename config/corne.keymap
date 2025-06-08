@@ -96,7 +96,7 @@
 &none &kp LALT &kp KP_PLUS &kp KP_MINUS &kp LBRC &kp RBRC &kp LS(N1) &kp PGUP &kp UP &kp PGDN &mt LALT HOME &none
 &none  &kp LSHIFT   &kp KP_ASTERISK   &kp KP_SLASH   &kp SCLN   &kp SQT     &kp LS(SLASH)  &kp LEFT   &kp DOWN  &kp RIGHT   &mt LSHIFT END   &none
 // &kp RCTRL &kp AT_MARK &kp EQUAL &kp COMMA &kp DOT &kp RCTRL
-&kp RCTRL  &kp LBRC   &kp EQUAL     &kp DOT   &kp COMMA  &kp RCTRL
+&kp RCTRL  &kp LBRC   &kp EQUAL     &kp COMMA   &kp COMMA  &kp RCTRL
             >;
 
         };
