@@ -93,9 +93,9 @@
             label = "1";
             bindings = <
 &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &kp LALT  &kp KP_PLUS   &kp KP_MINUS  &kp LBKT  &kp RBKT    &kp LS(N1)  &kp PGUP  &kp UP  &kp PGDN  &mt LALT HOME  &none
+&none  &kp LALT  &kp KP_PLUS   &kp KP_MINUS  &kp RBKT  &kp JPY    &kp LS(N1)  &kp PGUP  &kp UP  &kp PGDN  &mt LALT HOME  &none
 &none  &kp LSHIFT   &kp KP_ASTERISK   &kp KP_SLASH   &kp SCLN   &kp SQT     &kp LS(SLASH)  &kp LEFT   &kp DOWN  &kp RIGHT   &mt LSHIFT END   &none
-&kp RCTRL  &kp FSLH   &kp EQUAL     &kp COMMA   &kp DOT  &kp RCTRL
+&kp RCTRL  &kp LBKT   &kp EQUAL     &kp COMMA   &kp DOT  &kp RCTRL
             >;
 
         };
