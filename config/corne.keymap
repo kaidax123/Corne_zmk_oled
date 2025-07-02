@@ -86,13 +86,12 @@
         default_layer {
             label = "0";
             bindings = <
-
-&kp ESC       &kp Q  &kp W  &kp E       &kp R         &kp T                     &kp Y                   &kp U           &kp I                     &kp O    &kp P     &kp BSPC
-&kp CAPSLOCK  &mt LALT A &kp S  &kp D       &kp F         &kp G                     &kp H                   &kp J           &kp K                     &kp L    &mt LSHIFT INT4  &kp RET
-&kp TAB       &mt LSHIFT Z  &mt LGUI X  &kp C       &kp V         &kp B                     &kp N                   &kp M           &kp MINUS                  &kp CAPSLOCK  &lt 3 INT5  &kp RSHFT
-                                        &mt LCTRL ESC    &lt 2 TAB    &lt 1 SPACE          &lt 1 RET  &lt 2 BSPC  &bt clr
-            >;
-        };
+        &kp ESC       &kp Q  &kp W  &kp E       &kp R         &kp T                     &kp Y                   &kp U           &kp I                     &kp O    &kp P     &kp BSPC
+        &kp CAPSLOCK  &mt LALT A &kp S  &kp D       &kp F         &kp G                     &kp H                   &kp J           &kp K                     &kp L    &mt LSHIFT INT4  &kp RET
+        &kp TAB       &mt LSHIFT Z  &mt LGUI X  &kp C       &kp V         &kp B                     &kp N                   &kp M           &kp MINUS                  &kp CAPSLOCK  &lt 3 INT5  &kp RSHFT
+        &mt LCTRL ESC    &lt 2 TAB    &lt 1 SPACE          &lt 1 RET  &lt 2 BSPC
+    >, &bt clr;
+};
 
         number_layer {
             label = "1";
